@@ -1,0 +1,21 @@
+.Nav-bar {
+  background-color: saddlebrown;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Nav-bar h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.Nav-bar img {
+  width: 100px;
+}
