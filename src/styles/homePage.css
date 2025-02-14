@@ -157,7 +157,7 @@
   }
 }
 
-@media (min-width: 690px) and (max-width: 750px) {
+@media (max-width: 750px) {
   #homePage #levelSelection #buttons,
   #homePage #levelSelection #buttons > div {
     display: flex;
