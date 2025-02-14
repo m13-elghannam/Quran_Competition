@@ -1,0 +1,172 @@
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#homePage #mainFlower {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  width: 22.5vw;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#homePage #levelSelection,
+#homePage #levelSelection #buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+#homePage #levelSelection h1 {
+  font-size: 60px;
+  color: saddlebrown;
+}
+
+#homePage #levelSelection #buttons > div {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+#homePage #levelSelection .btn {
+  width: 200px;
+}
+
+#homePage aside {
+  position: absolute;
+  top: 0;
+  right: 6vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 225px;
+  padding: 15px;
+  background-color: saddlebrown;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+#homePage aside #competitionLogo {
+  width: 150px;
+}
+
+#homePage aside p {
+  font-size: 22.5px;
+  color: white;
+  height: 150px;
+  display: flex;
+  direction: rtl;
+  line-height: 25px;
+  text-align: center;
+}
+
+#homePage aside #sideFlower,
+#homePage #sideFlower2 {
+  width: 150px;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+#homePage #sideFlower2 {
+  display: none;
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+  width: 22.5vw;
+  scale: 1;
+}
+
+@media (min-width: 950px) and (max-width: 1150px) {
+  #homePage #levelSelection h1 {
+    font-size: 50px;
+  }
+  #homePage #levelSelection #buttons,
+  #homePage #levelSelection #buttons > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #homePage #levelSelection #buttons .btn {
+    width: 175px;
+    height: 50px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  #homePage aside {
+    display: none;
+  }
+  #homePage #mainFlower {
+    left: 25px;
+    top: 25px;
+    width: 150px;
+  }
+  #homePage #sideFlower2 {
+    display: flex;
+    right: 50px;
+    bottom: 50px;
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  #homePage #levelSelection #buttons,
+  #homePage #levelSelection #buttons > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+  }
+  #homePage aside {
+    display: none;
+  }
+  #homePage #mainFlower {
+    left: 25px;
+    top: 25px;
+    width: 175px;
+  }
+  #homePage #sideFlower2 {
+    display: flex;
+    right: 50px;
+    bottom: 50px;
+    width: 175px;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 750px) {
+  #homePage #levelSelection #buttons,
+  #homePage #levelSelection #buttons > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  #homePage aside,
+  #homePage #mainFlower,
+  #homePage #sideFlower2 {
+    display: none;
+  }
+}

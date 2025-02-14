@@ -2,11 +2,16 @@
   background-color: #fff2cc;
   color: saddlebrown;
   border: 2px solid saddlebrown;
-  width: 210px;
-  height: 63px;
+  height: 50px;
   border-radius: 8px;
   font-weight: bolder;
   font-size: 28px;
   font-family: sans-serif;
   margin: 10px;
+  width: 175px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }

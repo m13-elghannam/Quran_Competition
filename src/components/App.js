@@ -1,10 +1,11 @@
+import HomePage from "../pages/HomePage";
 import Nav from "./NavBar";
 
 function App() {
   return (
     <div className="App">
       <nav>
-        <Nav level="مستوي القران كامل" />
+        <HomePage />
       </nav>
     </div>
   );
